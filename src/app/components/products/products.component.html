@@ -1,0 +1,76 @@
+<div class="add-form">
+  <form>
+    <input type="image" placeholder="img">
+    <input type="text" placeholder="Product name">
+    <input type="text" placeholder="description">
+  </form>
+</div>
+<div class="categories-container">
+  <div class="category">
+    <h2>Продукты Apple</h2>
+    <div class="products-grid">
+      <div class="product" *ngFor="let product of products.slice(0, 3)">
+        <img [src]="product.image" [alt]="product.name">
+        <h3>{{ product.name }}</h3>
+        <p>{{ product.description }}</p>
+        <p>⭐ {{ product.rating }}</p>
+        <a [href]="product.link" target="_blank" class="buy-button">Купить</a>
+        <div class="share-buttons">
+          <button (click)="shareOnWhatsApp(product.link)"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeHq-vaUK8MlOy8sPlCE5cHlSF9w7jUJ6YDQ&s" alt="WhatsApp"></button>
+          <button (click)="shareOnTelegram(product.link)"><img src="https://img.freepik.com/premium-vector/round-telegram-logo-isolated-white-background_469489-903.jpg?w=740" alt="Telegram"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="category">
+    <h2>Аксессуары для телефона</h2>
+    <div class="products-grid">
+      <div class="product" *ngFor="let product of products.slice(3, 6)">
+        <img [src]="product.image" [alt]="product.name">
+        <h3>{{ product.name }}</h3>
+        <p>{{ product.description }}</p>
+        <p>⭐ {{ product.rating }}</p>
+        <a [href]="product.link" target="_blank" class="buy-button">Купить</a>
+        <div class="share-buttons">
+          <button (click)="shareOnWhatsApp(product.link)"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeHq-vaUK8MlOy8sPlCE5cHlSF9w7jUJ6YDQ&s" alt="WhatsApp"></button>
+          <button (click)="shareOnTelegram(product.link)"><img src="https://img.freepik.com/premium-vector/round-telegram-logo-isolated-white-background_469489-903.jpg?w=740" alt="Telegram"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="category">
+    <h2>Бытовая техника для дома</h2>
+    <div class="products-grid">
+      <div class="product" *ngFor="let product of products.slice(6, 9)">
+        <img [src]="product.image" [alt]="product.name">
+        <h3>{{ product.name }}</h3>
+        <p>{{ product.description }}</p>
+        <p>⭐ {{ product.rating }}</p>
+        <a [href]="product.link" target="_blank" class="buy-button">Купить</a>
+        <div class="share-buttons">
+          <button (click)="shareOnWhatsApp(product.link)"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeHq-vaUK8MlOy8sPlCE5cHlSF9w7jUJ6YDQ&s" alt="WhatsApp"></button>
+          <button (click)="shareOnTelegram(product.link)"><img src="https://img.freepik.com/premium-vector/round-telegram-logo-isolated-white-background_469489-903.jpg?w=740" alt="Telegram"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="category">
+    <h2>Бытовая техника для кухни</h2>
+    <div class="products-grid">
+      <div class="product" *ngFor="let product of products.slice(9, 12)">
+        <img [src]="product.image" [alt]="product.name">
+        <h3>{{ product.name }}</h3>
+        <p>{{ product.description }}</p>
+        <p>⭐ {{ product.rating }}</p>
+        <a [href]="product.link" target="_blank" class="buy-button">Купить</a>
+        <div class="share-buttons">
+          <button (click)="shareOnWhatsApp(product.link)"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeHq-vaUK8MlOy8sPlCE5cHlSF9w7jUJ6YDQ&s" alt="WhatsApp"></button>
+          <button (click)="shareOnTelegram(product.link)"><img src="https://img.freepik.com/premium-vector/round-telegram-logo-isolated-white-background_469489-903.jpg?w=740" alt="Telegram"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
