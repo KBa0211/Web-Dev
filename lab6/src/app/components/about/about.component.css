@@ -1,0 +1,10 @@
+.about-container {
+    text-align: center;
+    padding: 40px;
+  }
+  
+  .about-container p {
+    font-size: 18px;
+    color: #555;
+  }
+  

@@ -1,0 +1,13 @@
+<div class="product">
+    <img [src]="product.image" alt="{{ product.name }}">
+    <h3>{{ product.name }}</h3>
+    <p>{{ product.description }}</p>
+    <p>⭐ {{ product.rating }}</p>
+    <a [href]="product.link" target="_blank" class="buy-button">Купить</a>
+    <button (click)="likeProduct()">👍 {{ product.likes }}</button>
+    <button (click)="removeProduct()">🗑 Удалить</button>   
+    <div class="share-buttons">
+        <button (click)="shareOnWhatsApp(product.link)" ><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/225px-WhatsApp.svg.png" alt="WhatsApp" class="WhatsApp"></button>
+        <button (click)="shareOnTelegram(product.link)"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/1200px-Telegram_logo.svg.png" alt="Telegram" class="Telegram"></button>
+      </div>
+</div>

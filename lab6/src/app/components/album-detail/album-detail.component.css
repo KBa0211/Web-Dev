@@ -1,0 +1,40 @@
+.album-detail-container {
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .save-btn, .back-btn, .photos-link {
+    display: inline-block;
+    margin: 10px 5px;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .save-btn {
+    background-color: green;
+    color: white;
+    border: none;
+  }
+  
+  .back-btn {
+    background-color: gray;
+    color: white;
+    border: none;
+  }
+  
+  .photos-link {
+    background-color: #007bff;
+    color: white;
+  }
+  
